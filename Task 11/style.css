@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 38px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+main{
+    margin: 30px auto;
+    padding: 30px;
+    width: 650px;
+    height: 570px;
+    background-color: #D8D6D8;
+}
+
+div{
+    width: 130px;
+    height: 130px;
+    background-color: #403DC2;
+    border-radius: 50%;
+    animation: move 4s infinite ease;
+    position: relative;
+}
+
+@keyframes move{
+    0%{
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+    }
+
+    25%{
+        top: 0;
+        left:450px;
+        border-radius: 0;
+        background-color:red ;
+    }
+
+    50%{
+        top: 380px;
+        left: 450px;
+        border-radius: 50%;
+        background-color: green;
+    }
+
+    75%{
+        top: 380px;
+        left: 0px;
+        border-radius: 0;
+        background-color: goldenrod;
+    }
+
+    100%{
+        top: 0;
+        left:0px;
+        border-radius: 50%;
+    }
+
+}
+

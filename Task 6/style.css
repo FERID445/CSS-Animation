@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #009000;
+    font-size: 48px;
+    margin: 5px;
+}
+
+h2{
+    margin: 10px 5px;
+}
+
+ol{
+    margin: 20px 50px;
+    font-size: 26px;
+}
+
+ol>li::marker{
+   animation: scale 1s infinite ease alternate;
+}
+
+@keyframes scale {
+    to{
+        font-size: 26px;
+        color:black;
+    }
+
+    from{
+        font-size: 42px;
+        color:#009000;
+    }
+}
+

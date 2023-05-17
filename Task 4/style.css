@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 40vh;
+}
+
+.red,.blue,.yellow,.green{
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.red{
+  background-color:red;
+  transition: all 1s ease;
+}
+
+
+.blue{
+  background-color: blue;
+  transition: all 1s ease;
+}
+
+.yellow{
+  background-color: yellow;
+  transition: all 1s ease;
+}
+
+.green{
+  background-color: green;
+  transition: all 1s ease;
+}
+
+.main:hover>.left>.red{
+  transform:rotateZ(90deg) translateY(100px);
+}
+
+.main:hover>.left>.blue{
+  transform:rotateZ(-90deg) translateY(-100px);
+}
+
+.main:hover>.right>.yellow{
+  transform:rotateZ(-90deg) translateY(100px);
+}
+
+.main:hover>.right>.green{
+  transform:rotateZ(90deg) translateY(-100px);
+}
+
+.main{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+h1{
+  font-weight: 100;
+  font-size: 32px;
+}

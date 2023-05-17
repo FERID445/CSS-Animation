@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E6BC5F;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 42px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.rotateX,.rotateY,.rotateZ{
+    width: 130px;
+    height: 130px;
+    background-color: #259284;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 70px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.rotateX:hover{
+    transform: rotateX(150deg);
+    cursor: pointer;
+    animation-direction: reverse;
+}
+
+.rotateY:hover{
+    transform: rotateY(180deg);
+    cursor: pointer;
+} 
+
+.rotateZ:hover{
+    transform: rotateZ(120deg);
+    cursor: pointer;
+}

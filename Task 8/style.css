@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 25%;
+    height: 45vh;
+    background-color: #3C3AC4;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+p{
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 20px;
+}
+
+div:hover{
+    background-color: #b3b1ec;
+    cursor: pointer;
+    transition: border-radius 0.3s linear;
+    border-radius: 0;
+}
+
+div:hover>p{
+    color: rgb(41, 41, 41);
+}

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bar1{
+    width: 300px;
+    height: 50px;
+    border:1px blue solid;
+   
+}
+
+.blue1{
+    width: 50%;
+    height: 49px;
+    background-color: blue;
+    animation: move1 4s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 1s;
+}
+
+@keyframes move1 {
+    0%{
+        width: 50%;
+    }
+
+    33%{
+        width: 60%;
+    }
+
+    66%{
+        width: 35%;
+    }
+
+    100%{
+        width: 50%; 
+    }
+}
+
+.bar2{
+    width: 300px;
+    height: 50px;
+    border:1px blue solid;
+   
+}
+
+.blue2{
+    width: 50%;
+    height: 49px;
+    background-color: blue;
+    transition:all 3s ease;
+    animation: move2 4s infinite steps(1);
+}
+
+@keyframes move2 {
+    0% {
+      width: 50%;
+    }
+  
+    33% {
+      width: 60%;
+    }
+  
+    66% {
+      width: 35%;
+    }
+  
+    100% {
+      width: 50%;
+    }
+  }

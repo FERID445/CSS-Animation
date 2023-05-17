@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 2px;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+
+.container{
+    width: 500px;
+    height: 220px;
+    margin-left: 0;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-bottom: 20px;
+    transition: all 1s ease-in-out;
+  }
+  
+  .container:hover > .box1 {
+    width: 350px;
+  }
+
+  .box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: all 1s ease-in-out;
+    transition-delay: 1s;
+}
+  
+  .container:hover > .box2 {
+    width: 350px;
+    transition-delay: 1s;
+
+}
+  
+.prg{
+    margin-top: 20px;
+}
